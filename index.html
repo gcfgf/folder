@@ -1,11 +1,266 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
+   <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      h1{
+         text-decoration: underline;
+      }
+      .main{
+         background-color:rgb(52, 32, 5);
+         padding: 20px;
+         border: 2pxl solid chocolate;
+         
+
+      }
+      label{
+         font-size: medium;
+         font-family: 'Times New Roman', Times, serif;
+         color: azure;
+      
+      }
+      input{
+         margin: 10px;
+        
+      }
+      table{
+         border: 2px solid rgb(255, 174, 174);
+         
+      }
+      tr{
+         color: azure;
+      }
+    </style>
  </head>
  <body>
-    <h1>Hello World</h1>
+ <h1 style="text-align: center; color:rgb(22, 14, 14);">Student Registration Form</h1>
+
+ <div class="main">
+   <form>
+      <div>
+         <label for="fname">FIRST NAME: </label>
+         <input type="text"id="fname"  maxlength="15" minlength="10" placeholder="First Name">
+      </div>
+      <div>
+         <label for="lname">LAST NAME:</label>
+         <input type="text" id="lname" maxlength="15" minlength="10" placeholder="Last Name">
+      </div>
+      <div>
+         <label >DATE OF BIRTH:</label>
+        <select name="BirthDay" id="birthday">
+       <option value="-1">Day:</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       <option value="11">11</option>
+       <option value="12">12</option>
+       <option value="13">13</option>
+       <option value="14">14</option>
+       <option value="15">15</option>
+       <option value="16">16</option>
+       <option value="17">17</option>
+       <option value="18">18</option>
+       <option value="19">19</option>
+       <option value="20">20</option>
+       <option value="21">21</option>
+       <option value="22">22</option>
+       <option value="23">23</option>
+       <option value="24">24</option>
+       <option value="25">25</option>
+       <option value="26">26</option>
+       <option value="27">27</option>
+       <option value="28">28</option>
+       <option value="29">29</option>
+       <option value="30">30</option>
+        </select>
+        <select name="BirthMonth">
+         <option value="-1">Month:</option>
+         <option value="January">Jan</option>
+         <option value="February ">Feb</option>
+         <option value="March">Mar</option>
+         <option value="April">Apr</option>
+         <option value="May">May</option>
+         <option value="June">Jun</option>
+         <option value="July">Jul</option>
+         <option value="August">Aug</option>
+         <option value="Sepetember">Sep</option>
+         <option value="Octomber">Oct</option>
+         <option value="November">Nov</option>
+         <option value="December">Dec</option>
+        </select>
+        <select name="YearofBirth" id="yearofbirth">
+       <option value="-1">year</option>
+       <option value="2000">2000</option>
+       <option value="2001">2001</option>
+       <option value="2002">2002</option>
+       <option value="2003">2003</option>
+       <option value="2004">2004</option>
+       <option value="2005">2005</option>
+       <option value="2006">2006</option>
+       <option value="2007">2007</option>
+       <option value="2008">2008</option>
+       <option value="2009">2009</option>
+       <option value="2010">2010</option>
+       <option value="2011">2011</option>
+       <option value="2012">2012</option>
+       <option value="2013">2013</option>
+       <option value="2014">2014</option>
+       <option value="2015">2015</option>
+       <option value="2016">2016</option>
+       <option value="2017">2017</option>
+       <option value="2018">2018</option>
+       <option value="2019">2019</option>
+       <option value="2020">2020</option>
+       <option value="2021">2021</option>
+       <option value="2022">2022</option>
+       <option value="2023">2023</option>
+       <option value="2024">2024</option>
+        </select>
+
+      </div>
+      <div>
+         <label for="eid">EMAIL ID:</label>
+         <input type="email" id="eid" placeholder="Email" pattern="valu[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+      </div>
+      <div>
+         <label for="mno">MOBILR NUMBER</label>
+         <input type="phno" id="mno" placeholder="Mobile Number">
+      </div>
+      <div>
+        <label> GENDER:</label>
+         <label for="male">Male</label>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="fmale">Female</label>
+         <input type="radio" id="fmale" name="gender" value="female">
+      </div>
+      <div>
+         <label for="add">ADDRESS:</label>
+         <input style="padding: 10px;" type="text" id="add" placeholder="Address" >
+      </div>
+      <div>
+         <label for="city">CITY:</label>
+         <input type="text" id="city" placeholder="City">
+      </div>
+      <div>
+         <label for="pcode">PINCODE:</label>
+         <input type="text" id="pcode" name="pin" pattern="[0-9]{6}" maxlength="6" required placeholder="Pincode">
+      </div>
+      <div>
+         <label for="state">STATE:</label>
+         <input type="text" id="state" placeholder="State">
+      </div>
+      <div>
+         <label for="country">COUNTRY:</label >
+         <input type="text" id="country" placeholder="Country">
+      </div>
+     <div>
+      <label>HOBBIES:</label>
+      
+      <label>Drawing</label>
+      <input type="checkbox" name="hobbies" value="drawing">
+      <label>Singing</label>
+      <input type="checkbox" name="hobbies" value="singing">
+      <label>Dancing</label>
+      <input type="checkbox" name="hobbies" value="dancing">
+      <label>Sketching</label>
+      <input type="checkbox" name="hobbies" value="skeching">
+      <label>Others</label>
+      <input type="checkbox" name="hobbies" value="others">
+      <input type="text">
+     </div>
+   <div>
+      <label>QUALIFICATION:</label>
+      <table>      
+         <tr>
+         <th>SI.No</th>
+         <th>Examination</th>
+         <th>Board</th>
+         <th>Percentage</th>
+         <th>Year Of Passing</th>
+      </tr>
+         <tr>
+         <td>1</td>
+         <td>Class X</td>
+         <td>
+            <input type="text" maxlength="20" minlength="10" pattern="[A-Za-z]{20}" required>
+         </td>
+         <td>
+            <input type="text"  maxlength="2" pattern="[0-9]{2}" required">
+         </td>
+         <td>
+            <input type="text" maxlength="4" pattern="[0-9]{4}" required>
+         </td>
+      </tr>
+         <tr>
+            <td>2</td>
+            <td>Class XII</td>
+            <td>
+               <input type="text"  maxlength="20" minlength="10" pattern="[A-Za-z]{20}" required>
+            </td>
+            <td>
+               <input type="text"   maxlength="2" pattern="[0-9]{2}" required>
+            </td>
+            <td>
+               <input type="text"  maxlength="4" pattern="[0-9]{4}" required>
+            </td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td>
+               <input type="text" maxlength="20" minlength="10" pattern="[A-Za-z]{20}"  required>
+            </td>
+            <td>
+               <input type="text"  maxlength="2" pattern="[0-9]{2}" required>
+            </td>
+            <td>
+               <input type="text" maxlength="4" pattern="[0-9]{4}" required >
+            </td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Masters</td>
+            <td>
+               <input type="text" maxlength="20" minlength="10" pattern="[A-Za-z]{20}" required>
+            </td>
+            <td>
+               <input type="text" maxlength="2" pattern="[0-9]{2}" required>
+            </td>
+            <td>
+               <input type="text"  maxlength="4" pattern="[0-9]{4}" required>
+            </td>
+         </tr>
+      </table>
+   </div>
+      <div>
+         <label>COURSES APPLIED FOR:</label>
+         <label for="bca">BCA</label>
+         <input type="radio" id="bca" name="course" value="bca">
+         <label for="b.com">B.Com</label>
+         <input type="radio" id="b.com" name="course" value="b.Com">
+         <label for="b.sc">B.Sc</label>
+         <input type="radio" ID="b.sc" name="course" value="b.sc">
+         <label for="b.a">B.A</label>
+         <input type="radio" id="b.a" name="course" value="b.a">
+      </div>
+      <div>
+        
+         <input type="submit" value="Submit">
+      
+         <input type="reset" value="reset">
+
+      </div>
+   </form>
+ </div>
  </body>
  </html>
